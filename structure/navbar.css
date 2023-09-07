@@ -1,195 +1,228 @@
 /* Eftersom naven ska användas till alla sidor så är det här jag ändrar html och body */
-.html, body{ 
-    margin: 0px;
-    padding: 0px;
+.html,
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
 
-.navbar{
-    display: grid;
-    grid-template-rows: 100px;
-    grid-template-columns: 100px 80px 1fr 60px;
-    grid-template-areas: "loga kategorier sök varukorg";
-
-    background-color: #ffc64d;
-    height: 100px;
+.navbar {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 100px 80px 1fr 60px;
+  grid-template-areas: "loga kategorier sök varukorg";
+  background-color: #ffc64d;
+  height: 100px;
 }
 
-.logoItem{
+.navBarItem {
+  color: black;
+  font-weight: bolder;
+}
+
+.navbar:hover {
+  cursor: pointer;
+}
+
+.logoItem {
   grid-area: "loga";
   width: 100%;
   height: 100%;
   align-items: center;
 
 }
-.logo{
-    width: 80px;
-    padding: 10px;
-} 
-.kategorier{
-    grid-area: "kategorier";
-}
-.kategorier img{
-    width: 60px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.sök{
-    grid-area: "sök";
-    width: 100%;
-}
-.searchForm{
-    width: 100%;
-    height: 50%;
-    background-color: white;
 
-    margin-top: 25px;
-    margin-bottom: 25px;
-    display: flex;
-    border-radius: 15px;
-}
-.searchForm:hover{
-    background-color: #d9d8d7;
+.logo {
+  width: 80px;
+  padding: 10px;
 }
 
-.sökInput{
-    width: 10px;
-    padding: 0px;
-    border: none;
-    flex-grow: 1;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    font-size: 18px;
-    background-color: transparent;
-}
-.sökInput:focus{
-    outline: none;
-}
-.sökImg{
-    width: 30px;
-    height: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.categories {
+  grid-area: "kategorier";
 }
 
+.categories img {
+  width: 60px;
 
+  position: relative;
+  border-radius: 15px;
 
+  top: 20px;
+  bottom: 20px;
+  left: 4px;
+  right: 10px;
 
-
-.varukorg{
-    grid-area: "varukorg";
-    
-}
-.varukorg img{
-    width: 30px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-}
-.navBarItem{
-    color:black;
-    font-weight: bolder;
-}
-.navbar:hover{
-  cursor: pointer;
 }
 
+.categories img:hover{
+  background-color: #ebb134;
+}
+
+.search {
+  grid-area: "sök";
+  width: 100%;
+}
+
+.searchForm {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  border-radius: 15px;
+}
+
+.searchForm:hover {
+  background-color: #d9d8d7;
+}
+
+.searchInput {
+  width: 10px;
+  padding: 0px;
+  border: none;
+  flex-grow: 1;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchImg {
+  width: 30px;
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cart {
+  grid-area: "varukorg";
+}
+
+.cart img {
+  width: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  left: 15%;
+  right: 15%;
+  top:25%;
+  bottom: 25%;
+}
+.cart img:hover{
+  background-color: #ebb134;
+}
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #d9d8d7; 
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  .offCannvasHeader{
-    background-color: #ffc64d;
-    width: 100%;
-    height: 100px;
-
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 5px;
-    margin-right: 20px;
-    margin-left: 20px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    transition: 0.3s;
-    border:solid black 2px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-  }
-  
-.sidenav a img{
-    width: 20px;
-    padding: 0px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #d9d8d7;
+  overflow-x: hidden;
+  /* Kan inte skrolla horizontelt*/
+  transition: 0.5s;
 }
 
-  .sidenav a:hover {
-    background-color: aliceblue;
-  }
-  
-  .sidenav .closebtn {
-    font-size: 70px;
-    float: right;
-    color: black;
-    border: none;
-    padding-right: 20px;
-    margin: 0px;
-    display: none;
-  }
-  .sidenav .closebtn:hover {
-    background-color: transparent;
-  }
-  .offCanvasFooter{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-  .offCanvasFooter a{
-    width: 80%;
-    border: none;
-    background-color: #ffc64d;
-    color: black;
-    margin: 0px;
-    border-radius: 25px;
-    margin-bottom: 10px;
-    text-align: center;
+.sidenav a {
+  padding: 8px 8px 8px 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  border: solid black 2px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
 
+.sidenav a img {
+  width: 20px;
+  padding: 0px;
+}
+
+.sidenav a:hover {
+  background-color: aliceblue;
+}
+
+.sidenav .closebtn {
+  font-size: 70px;
+  float: right;
+  color: black;
+  border: none;
+  padding-right: 20px;
+  margin: 0px;
+  display: none;
+}
+
+.sidenav .closebtn:hover {
+  background-color: transparent;
+}
+
+.offCannvasHeader {
+  background-color: #ebb134;
+  width: 100%;
+  height: 100px;
+}
+
+.headerText {
+  float: left;
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.offCanvasFooter {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.offCanvasFooter a {
+  width: 80%;
+  border: none;
+  background-color: #ebb134;
+  color: black;
+  margin: 0px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.nothing {
+  display: none;
+  grid-area: "nothing1";
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
-  .headerText{
-    float: left;
-    font-size: 30px;
-    padding-left: 20px;
+
+  .sidenav a {
+    font-size: 18px;
   }
-  .nothing{
-    display: none;
-    grid-area: "nothing1";
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+}
 
 @media only screen and (min-width: 600px) {
-    .navbar{
-        grid-template-columns: .5fr 100px 80px 1fr 60px .5fr;
-        grid-template-areas: "nothing1 loga kategorier sök varukorg nothing";
-    }
-    .nothing{
-        display: block;
-    }
+  .navbar {
+    grid-template-columns: .5fr 100px 80px 1fr 60px .5fr;
+    grid-template-areas: "nothing1 loga kategorier sök varukorg nothing";
+  }
+
+  .nothing {
+    display: block;
+  }
 }
-
-
