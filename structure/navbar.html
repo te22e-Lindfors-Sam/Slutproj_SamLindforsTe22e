@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavbarTest</title>
+
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+    <nav class="navbar"> <!--Navbar Holder-->
+        <script src="navbar.js"></script>
+
+        <div class="nothing"></div><!--Used to fix spacing for the nav on desktop and tablet mode-->
+
+        <a href="" class="logoItem"><img src="../images/Loga.png" alt="Loga" class="logo"></a>
+
+        <div class="navBarItem kategorier">
+            <span onclick="openNav()">
+            <center><img src="../images/Icons/HamburgerMenu.svg" alt="Kategorier"></center>
+            </span>
+        </div>
+
+
+        <div class="sök">
+            <form action="" class="searchForm">
+                <img src="../images/Icons/search.svg" alt="Sök" class="sökImg">
+               <input type="text" class="sökInput" placeholder="Sök...">
+            </form>
+        </div>
+
+        <a href="" class="navBarItem varukorg">
+            <center><img src="../images/Icons/Cart.svg" alt="Varukorg"></center>
+        </a>
+
+        <div id="ofCannvasNav" class="sidenav">
+            <div class="offCannvasHeader">
+                <p class="headerText">Kategorier</p>
+                <div>
+                    <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()"> &times;</a>
+                </div>
+            </div>
+
+            <a href="#"><img src="../images/Icons/book.svg" alt="Pockets"> &nbsp; Pockets</a>
+            <a href="#"><img src="../images/Icons/book.svg" alt="Dubbel Pockets"> &nbsp; Dubbel Pockets</a>
+            <a href="#"><img src="../images/Icons/star.svg" alt="Special Pockets"> &nbsp; Special Pockets</a>
+            <a href="#"><img src="../images/Icons/tidning.svg" alt="Tidningar"> &nbsp; Serietidningar</a>
+
+            <div class="offCanvasFooter">
+                <a href="#">Sälj dina pockets</a>
+                <a href="#">Om oss</a>
+            </div>
+        </div>
+    </nav>
+
+</body>
+</html>
