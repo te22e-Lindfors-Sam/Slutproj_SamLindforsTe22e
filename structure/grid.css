@@ -13,25 +13,33 @@
     text-align: center;
     margin: 3px;
 }
+.card a{
+  text-decoration: none;
+}
+.card p{
+  text-overflow: clip;
+  font-size: 25px;
+  text-anchor: middle;
+  padding: 0px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 0px;
+  margin-top: 5px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none !important;
+}
+.card:hover{
+  background-color:#d9d8d7 ;
+}
 .cardImg{
     width: 100%;
     height: 100%;
     object-fit: contain;
     position: relative;
 }
-.card p{
-    text-overflow: clip;
-    font-size: 25px;
-    text-anchor: middle;
-    padding: 0px;
-    padding-right: 5px;
-    padding-left: 5px;
-    margin: 0px;
-    margin-top: 5px;
-    font-weight: bold;
-}
 
-.köp{
+.buy{
     margin-top: 10px;
     margin-bottom: 15px;
     text-align: center;
@@ -42,101 +50,7 @@
     background-color: #21D01D;
     font-weight: bold;
 }
-.köp:hover{
+.buy:hover{
     background-color: #28a226;
 }
 
-.card:hover{
-    background-color:#d9d8d7 ;
-}
-
-.modalButton{
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    height: 100%;
-    border: none;
-    background-color: transparent;
-}
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    
-  }
-  
-  /* Modal Content/Box */
-  .modal-header{
-    background-color: #ffc64d;
-    padding: 50px;
-
-}
-
-
-  .modal-content {
-    background-color: #d9d8d7;
-    margin: 5% auto; /* 15% from the top and centered */
-    /* padding: 20px; */
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-
-  .modal-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal-body p{
-    font-size: 20px !important;
-    padding: 0px;
-    margin: 20px;
-    font-weight: normal;
-    text-align: start;
-  }
-  
-  .modal-body h3{
-    font-size: 25px;
-    padding: 0px;
-    margin: 0px;
-  }
-  
-
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    align-self:flex-end;
-    font-size: 50px;
-    font-weight: bold;
-    margin-right: 20px;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-.modalImg{
-   width: 70%;
-   object-fit: contain;
-   padding:0px 10px 10px 10px;
-    
-}
-
-@media only screen and (min-width: 600px) {
-    .modalImg{
-   width: 70%;
-   object-fit: contain;
-   padding:0px 10px 10px 10px;
-    
-}
-}
