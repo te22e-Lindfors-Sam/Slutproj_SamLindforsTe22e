@@ -1,0 +1,104 @@
+body{
+    background-color: #d9d8d7 !important;
+}
+
+.product{
+    height: 700px;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 65% 35%;
+    grid-template-areas: 
+    "prodImg"
+    "prodDec";
+    background-color: #fff ;   
+}
+.productImg{
+    grid-area: "prodImg";
+    margin-left: auto;
+    margin-right: auto;
+}
+.productImg img{
+    height: 100%;
+}
+
+.productDescription{
+    grid-area: "prodDec";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productDescription h2{
+    text-align: center;
+}
+.productDescription p{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 0px;
+}
+#buy{
+    font-size: large;
+    padding: 2% 25% 2% 25%  !important;
+}
+
+.infoText{
+    text-align: center;
+    background-color: #fff;
+    margin: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.grid{
+    background-color: #fff;
+    padding-bottom: 20px ;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .product{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "prodImg prodDec";
+    }
+    .productImg{
+        grid-area: "prodImg";
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .productImg img{
+        height: 90%;
+    }
+    .productDescription h2{
+        margin-top: 20%;
+        font-size: xx-large;
+        margin-right: 20%;
+        margin-left: 20%;
+        text-align: unset;
+    }
+    .productDescription p{
+        font-size: x-large;
+        margin-right: 20%;
+        margin-top: 0px;
+    }
+    #buy{
+        position: relative;
+        top: 20%;
+        padding: 2% 25% 2% 25%  !important;
+    }
+    .infoText{
+        width: 70% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid{
+        width: 70% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
