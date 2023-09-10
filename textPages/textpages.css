@@ -1,0 +1,34 @@
+body{
+    background-color: #d9d8d7  !important;
+    
+}
+
+.textContainer{
+    height: auto;
+    background-color: #fff;
+    padding-bottom: 30vh;
+    padding-top: 50px;
+    margin: 0px;
+}
+.textContainer h1{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0px;
+}
+.textContainer p{
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.textContainer form{
+    margin-left: 10%;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .textContainer{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
