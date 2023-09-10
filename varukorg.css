@@ -1,0 +1,11 @@
+.item{
+    text-decoration: none;
+    list-style: none;
+    border-bottom: black solid 2px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+}
+
+

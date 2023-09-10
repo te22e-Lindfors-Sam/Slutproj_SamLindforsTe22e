@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sälj Sälj Sälj</title>
+
+    <link rel="stylesheet" href="../structure/navbar.css">
+    <link rel="stylesheet" href="textpages.css">
+    <link rel="stylesheet" href="../structure/footer.css">
+</head>
+
+<body>
+
+    <nav class="navbar"> <!--Navbar Holder-->
+        <script src="../structure/navbar.js"></script>
+
+        <div class="nothing"></div><!--Used to fix spacing for the nav on desktop and tablet mode-->
+
+        <a href="" class="logoItem"><img src="../images/Loga.png" alt="Loga" class="logo"></a>
+
+        <div class="navBarItem categories">
+            <span onclick="openNav()">
+               <img src="../images/Icons/HamburgerMenu.svg" alt="Kategorier">
+            </span>
+        </div>
+
+
+        <div class="search">
+            <form action="" class="searchForm">
+                <img src="../images/Icons/search.svg" alt="Sök" class="searchImg">
+                <input type="text" class="searchInput" placeholder="Sök...">
+            </form>
+        </div>
+
+        <a href="" class="navBarItem cart">
+            <img src="../images/Icons/Cart.svg" alt="Varukorg">
+        </a>
+
+        <div id="ofCannvasNav" class="sidenav">
+            <div class="offCannvasHeader">
+                <p class="headerText">Kategorier</p>
+                <div>
+                    <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()"> &times;</a>
+                </div>
+            </div>
+
+            <a href="#"><img src="../images/Icons/book.svg" alt="Pockets"> &nbsp; Pockets</a>
+            <a href="#"><img src="../images/Icons/book.svg" alt="Dubbel Pockets"> &nbsp; Dubbel Pockets</a>
+            <a href="#"><img src="../images/Icons/star.svg" alt="Special Pockets"> &nbsp; Special Pockets</a>
+            <a href="#"><img src="../images/Icons/tidning.svg" alt="Tidningar"> &nbsp; Serietidningar</a>
+
+            <div class="offCanvasFooter">
+                <a href="#">Sälj dina pockets</a>
+                <a href="#">Jobba hos oss</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="textContainer">
+        <h1>Vi köper dina pockets</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sint asperiores! Ratione doloribus architecto quos voluptatum rem ipsam, ipsa esse?</p>
+
+        <p>Sälj dina pockets här <a href="">Kontakta oss</a></p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem explicabo quasi voluptatibus. Nam, minus modi.</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam qui voluptate voluptates corrupti consequatur id facilis minus recusandae, cumque odit voluptas earum fuga porro commodi rem adipisci corporis eligendi.</p>
+   
+    </div>
+
+
+    <footer>
+        <div class="footerContainer">
+            <ul>
+                <li><a href="">Om oss</a></li>
+                <li><a href="">Kontakta oss</a></li>
+                <li><a href="">Sök jobb</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Om oss</a></li>
+            </ul>
+    </footer>
+
+</body>
+</html>
