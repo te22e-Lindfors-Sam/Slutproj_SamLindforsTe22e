@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <link rel="stylesheet" href="../../structure/navbar.css">
+    <link rel="stylesheet" href="../../structure/productpage.css">
+    <link rel="stylesheet" href="../../structure/grid.css">
+    <link rel="stylesheet" href="../../structure/footer.css">
+</head>
+
+<body>
+
+    <nav class="navbar"> <!--Navbar Holder-->
+        <script src="../../structure/navbar.js"></script>
+
+        <div class="nothing"></div><!--Used to fix spacing for the nav on desktop and tablet mode-->
+
+        <a href="" class="logoItem"><img src="../../images/Loga.png" alt="Loga" class="logo"></a>
+
+        <div class="navBarItem categories">
+            <span onclick="openNav()">
+               <img src="../../images/Icons/HamburgerMenu.svg" alt="Kategorier">
+            </span>
+        </div>
+
+
+        <div class="search">
+            <form action="" class="searchForm">
+                <img src="../../images/Icons/search.svg" alt="Sök" class="searchImg">
+                <input type="text" class="searchInput" placeholder="Sök...">
+            </form>
+        </div>
+
+        <a href="" class="navBarItem cart">
+            <img src="../../images/Icons/Cart.svg" alt="Varukorg">
+        </a>
+
+        <div id="ofCannvasNav" class="sidenav">
+            <div class="offCannvasHeader">
+                <p class="headerText">Kategorier</p>
+                <div>
+                    <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()"> &times;</a>
+                </div>
+            </div>
+
+            <a href="#"><img src="../../images/Icons/book.svg" alt="Pockets"> &nbsp; Pockets</a>
+            <a href="#"><img src="../../images/Icons/book.svg" alt="Dubbel Pockets"> &nbsp; Dubbel Pockets</a>
+            <a href="#"><img src="../../images/Icons/star.svg" alt="Special Pockets"> &nbsp; Special Pockets</a>
+            <a href="#"><img src="../../images/Icons/tidning.svg" alt="Tidningar"> &nbsp; Serietidningar</a>
+
+            <div class="offCanvasFooter">
+                <a href="#">Sälj dina pockets</a>
+                <a href="#">Om oss</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="product">
+        <div class="productImg"><img src="../../images/products/Pockets/KAP_381.png" alt=""></div>
+        <div class="productDescription">
+            <h2>Kalle Ankas Pocket #381</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nobis magni</p>
+            <button class="buy" id="buy">Köp - 99kr</button>
+        </div>
+    </div>
+
+    <h1 class="infoText">Mer</h1>
+    <div class="grid">
+
+        <div class="card">
+            <a href="../specialPockets/KapSpec24.html">
+                <div>
+                    <img src="../../images/products/SpecialPokeet/KAPS_24spec.png" alt="" class="cardImg">
+                </div>
+                <p>Kalle Pocket Special Vilda Västern</p>
+                <button class="buy">Köp</button>
+            </a>
+        </div>
+        <div class="card">
+            <a href="../specialPockets/KapSpec32.html">
+                <div>
+                    <img src="../../images/products/SpecialPokeet/KAPS_32spec.png" alt="" class="cardImg">
+                </div>
+                <p>Kalle Pocket Special Sommartider</p>
+                <button class="buy">Köp</button>
+            </a>
+        </div>
+        <div class="card">
+            <a href="../specialPockets/KapSpec42.html">
+                <div>
+                    <img src="../../images/products/SpecialPokeet/KAPS_42spec.png" alt="" class="cardImg">
+                </div>
+                <p>Kalle Pocket Special Drak Krigaren</p>
+                <button class="buy">Köp</button>
+            </a>
+        </div>
+        <div class="card">
+            <a href="../specialPockets/KapSpec45.html">
+                <div>
+                    <img src="../../images/products/SpecialPokeet/KAPS_45spec.png" alt="" class="cardImg">
+                </div>
+                <p>Kalle Pocket Special spökplumpen</p>
+                <button class="buy">Köp</button>
+            </a>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="footerContainer">
+            <ul>
+                <li><a href="">Om oss</a></li>
+                <li><a href="">Kontakta oss</a></li>
+                <li><a href="">Sök jobb</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Om oss</a></li>
+            </ul>
+    </footer>
+
+</body>
+
+</html>
