@@ -17,6 +17,9 @@ function buy(){
     const existingProducts = JSON.parse(localStorage.getItem('products')) || [];
     existingProducts.push(product);
     localStorage.setItem('products', JSON.stringify(existingProducts));
+
+    var message = "Lagt i Varukorgen!";
+    window.alert(message);
 }
 
 document.getElementById('buy').addEventListener('click', buy);
