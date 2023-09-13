@@ -11,6 +11,12 @@
     background-color: #d7d7d7;
 }
 
+
+.textContainer p{
+    font-size: 20px;
+    margin-left: 0%;
+    margin-right: 10%;
+}
 .trashBin{
     background-color: red;
     border: none;

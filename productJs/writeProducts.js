@@ -50,7 +50,13 @@ function getProducts() {
       }
 
     } 
-    document.getElementById("totPrice").textContent = `Totalt: ${totPrice}kr`;
+    console.log(totPrice);
+    if (totPrice === undefined){
+          document.getElementById("totPrice").textContent = `Totalt: 0kr`;
+    }
+    else {
+      document.getElementById("totPrice").textContent = `Totalt: ${totPrice}kr`;
+    }
 }
 
 function deleteItem(trashBin){
