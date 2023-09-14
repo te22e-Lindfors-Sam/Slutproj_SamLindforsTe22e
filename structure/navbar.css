@@ -43,7 +43,7 @@ body {
 
 .categories img {
   width: 60px;
-  height: auto;
+  height: 60px;
   position: relative;
   border-radius: 15px;
 
@@ -148,7 +148,7 @@ body {
 
 .sidenav a img {
   width: 20px;
-  height: auto;
+  height: 20px;
   padding: 0px;
 }
 
