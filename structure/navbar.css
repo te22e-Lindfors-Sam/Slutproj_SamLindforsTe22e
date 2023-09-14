@@ -1,4 +1,5 @@
-/* Eftersom naven ska användas till alla sidor så är det här jag ändrar html och body */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 .html,
 body {
   margin: 0px;
@@ -13,6 +14,7 @@ body {
   grid-template-areas: "loga kategorier sök varukorg";
   background-color: #ffc64d;
   height: 100px;
+  font-family: Anton, sans-serif;
 }
 
 .navBarItem {
