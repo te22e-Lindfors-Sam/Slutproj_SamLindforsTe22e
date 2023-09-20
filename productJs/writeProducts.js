@@ -1,5 +1,6 @@
 getProducts();
 
+//Its adds all the products in the cart
 function getProducts() {
     const storedProducts = JSON.parse(localStorage.getItem('products'));
   
@@ -7,13 +8,14 @@ function getProducts() {
       
     const parent = document.getElementById('cartContainer');
 
-
-
     var totPrice = 0;
     var i = 0;
 
+    //for each product draw this
       for (const product of storedProducts) {
 
+
+        //makes the right containers and the information
         const newDiv = document.createElement('div');
         newDiv.className = 'item'; 
         newDiv.id = i;
@@ -38,6 +40,8 @@ function getProducts() {
         const trashImg =  document.createElement('img');
         trashImg.src = "images/Icons/trash.svg";
         
+
+        //adds the containers to the html page
         newDiv.appendChild(name);
         newDiv.appendChild(price);
         linkP.appendChild(link);
@@ -50,7 +54,7 @@ function getProducts() {
       }
 
     } 
-    console.log(totPrice);
+    //Calculates the total price
     if (totPrice === undefined){
           document.getElementById("totPrice").textContent = `Totalt: 0kr`;
     }
@@ -59,16 +63,19 @@ function getProducts() {
     }
 }
 
+
 function deleteItem(trashBin){
-  console.log(trashBin.target.parentNode.parentNode);
+  //gets the selcted item by the parents id
   var index = trashBin.target.parentNode.parentNode.id;
 
+  //delate the prodcut and shoretn the array
   var storedProducts = JSON.parse(localStorage.getItem('products'));
   delete storedProducts[index];
   let filteredArray = storedProducts.filter(item => item !== null);
 
   localStorage.setItem('products', JSON.stringify(filteredArray));
 
+  //delate all elements in the html
   const parentElement = document.getElementById('cartContainer');
   while (parentElement.firstChild) {
     parentElement.removeChild(parentElement.firstChild);
